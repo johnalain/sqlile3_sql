@@ -26,4 +26,4 @@ for row in data:
  #print(row[0]) print all title[1]print genre[2]print year when i add rowid print (row[0])wil print id column
 db.commit()
 db.close()
-#time:24:49
+#time:36:25
