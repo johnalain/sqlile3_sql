@@ -16,6 +16,7 @@ cur = db.cursor()
 # print(cur.fetchmany(2))
 #fetchmany(number of lines in list )
 data = cur.execute("SELECT rowid,* FROM movie WHERE title = 'oppenheimer'")
+data = cur.execute("SELECT rowid,* FROM movie ORDER BY year DESC ")
 #WHERE is to add condition to display matching data the condition here is (title = 'oppenheimer')
 data = (cur.fetchall())
 for row in data:
